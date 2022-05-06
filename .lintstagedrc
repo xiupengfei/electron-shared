@@ -1,0 +1,19 @@
+{
+  "src/**/*.{js,jsx,ts,tsx}": [
+    "eslint  --fix",
+    "prettier --write"
+  ],
+  "*.md": [
+    "prettier --write"
+  ],
+  "src/**/*.{css,less}": [
+    "stylelint src/**/*.{css,less} --custom-syntax postcss-less --fix"
+  ],
+  "src/**/*.{html,vue}": [
+    "stylelint src/**/*.{html,vue} --custom-syntax postcss-html --fix"
+  ],
+  "src/**/*.vue": [
+    "prettier --write",
+    "eslint --fix"
+  ]
+}
